@@ -1,5 +1,5 @@
 {
-    //********Constrains******** 
+    //******** Constrains ******** 
     const addCourseToStudent = <T extends {id:number,name:string,email:string}>(student: T) =>{
         const course = 'Next level web deb'
         return{
@@ -23,7 +23,7 @@
     const person1 : Owner2 = "ship"
 
 
-    //********Constrains using Key of******** 
+    //******** Constrains using Key of ******** 
     const getPropertyValue =<X,Y extends keyof X> (obj: X, key : Y) => {
         return obj[key]
     }
